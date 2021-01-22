@@ -1,0 +1,11 @@
+/* program 2,language:JS */
+/* Set method will remove duplicates and returns new array */
+let array = [1,2,2,6,6,8,9,5];
+if(1 <= array.length && array.length <= 10^5){
+  let newArray = [...new Set(array)];
+  
+  console.log(newArray)
+}
+else{
+console.log("out of constarints")
+}

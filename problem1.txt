@@ -1,0 +1,17 @@
+#Program 1 : Power of a
+#Language is python ,recursion
+
+
+a= int(input("Enter the first number :"))
+b=int(input("Enter thre power of first number :"))
+
+def powerOf(a,b):
+  if(1<=a and b<=10):
+   if(b==0 or b== 1):
+     return a
+   else:
+    return (a*powerOf(a,b-1) )
+  else:
+    return "out of constarints"  
+   
+print("Result :",powerOf(a,b) )  
